@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Waterfall</title>
+    <title>Incremental</title>
     <link rel="stylesheet" type="text/css" href="sdlcmodelunderpages.css">
 </head>
 <body>
     <p>
+        <a href="sdlcmodels.html" id="linkcolor">Tagasi</a>
         <!-- pealkiri -->
         <h1>Incremental Development Life Cycle</h1>
         <!-- kirjeldus -->
         <h3>
-            See mudel sobib kõige paremini siis, kui arendajad on sarnase tarkvara juba varem välja töötanud ja arendanud ning on teadlikud selle kõigist valdkondadest.
+            Inkrementaalne arendus on etapiviisiline ja ajagraafikut järgiv strateegia, kus süsteemi erinevaid osi<br>
+            arendatakse erinevatel aegadel ja erineva kiirusega ning kui üks osa valmis saab, integreeritakse see <br>
+            juba valmis süsteemiga. Alternatiivne strateegia oleks kodeerida kõik süsteemi osad ja siis kogu kood<br>
+            integreerida ühekorraga.
         </h3>
         <!-- mudeli visuaalne joonis -->
-        <img src="https://www.tutorialspoint.com/software_engineering/images/sdlc_iterative.png" alt="incrementalmodel">
+        <img src="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/image3.jpeg" alt="incrementalmodel">
         <!-- tabel mis loetleb tugevused ja nõrkused -->
         <table>
             <tr>
@@ -23,8 +27,27 @@
                 <th>Nõrkused</th>
             </tr>
             <tr>
-                <td>Kiire ja effektiivne kui oled teinud midagi sellist sorti ennem</td>
-                <td>See mudel ei tööta sujuvalt, kui eelmises etapis on probleeme</td>
+                <td>Kulutused, mida tehakse kasutaja nõuete muutumise tõttu,<br>
+                    vähenevad</td>
+                <td>Progress ei ole hästi jälgitav</td>
+            </tr>
+            <tr>
+                <td>Kergem on saada kliendi tagasisidet juba tehtud arendustööle</td>
+                <td>Süsteemi struktuur kipub halvenema uute osade lisandumisel</td>
+            </tr>
+            <tr>
+                <td>Kliendile on võimalik kiiremini tarnida ja evitada loodavat tarkvara</td>
+                <td>Juhtimine on pidev tegevus, millega tuleb tegeleda</td>
+            </tr>
+            <tr>
+                <td>Olulised moodulid/funktsioonid töötatakse esmalt välja ja seejärel<br>
+                    lisatakse ülejäänud osade kaupa.</td>
+                <td>Enne kui projekti saab järk-järgult lahti võtta ja alustada,<br>
+                    tarkvara täielikud nõuded peaksid olema selged</td>
+            </tr>
+            <tr>
+                <td>Lühikese iteratsiooni ajal on lihtsam testida ja siluda</td>
+                <td>See nõuab head planeerimist ja projekteerimist</td>
             </tr>
         </table>
     </p>
