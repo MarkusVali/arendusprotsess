@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entity Relationship Diagram</title>
+    <link rel="stylesheet" type="text/css" href="../index.css">
+</head>
+<body>
+    <p>
+        <a href="../index.html" id="linkcolor">Tagasi</a>
+
+        <h1>ERD (Entity Relationship Diagram)</h1>
+
+        <h3>
+            Olemisuhete diagramm, tuntud ka kui ERD, ER diagramm või ER mudel, on teatud tüüpi struktuurskeem, mida kasutatakse<br>
+            andmebaasi kujundamisel. ERD sisaldab erinevaid sümboleid ja konnektoreid, mis visualiseerivad kahte olulist teavet:<br>
+            süsteemi ulatuse peamised olemid ja nende olemite omavahelised suhted.
+        </h3>
+
+        <img src="https://cdn-images.visual-paradigm.com/guide/data-modeling/what-is-erd/01-entity-relationship-diagram.png" height="500" width="800">
+
+        <h3>
+            Kui me räägime ERD olemitest, siis väga sageli peame silmas äriobjekte, nagu:</h3>
+        <ul>
+            <li>Inimesed/rollid (nt üliõpilane)</li>
+            <li>Materiaalseid äriobjekte (nt toode)</li>
+            <li>Immateriaalseid äriobjekte (nt logi)</li>
+        </ul>
+        <h3>
+            "Suhe" tähendab, kuidas need olemid on süsteemis üksteisega seotud.
+        </h3>
+        
+        <br>
+        <h1>Kasutusalad</h1s>
+        <h3>Kui ER-mudeleid töötatakse enamasti välja relatsiooniliste andmebaaside kujundamiseks kontseptsioonide visualiseerimise ja<br>
+            füüsilise andmebaasi kujundamise osas, siis on siiski ka teisi olukordi, kus ER-diagrammid võivad aidata. Näiteks:
+        </h3>
+        <ul>
+            <li>Andmebaasi disain</li>
+            <li>Andmebaasi silumine</li>
+            <li>Andmebaasi loomine ja parandamine</li>
+            <li>Abi nõuete kogumisel</li>
+        </ul>
+        <br>
+        <h1>ERD märgete juhend</h1>
+        <h2>Olem</h2>
+        <h3>ERD-Olem on süsteemis määratletav asi või mõiste, näiteks isik/roll (nt õpilane), objekt (nt arve), kontseptsioon (nt profiil)<br>
+            või sündmus (nt tehing)
+        </h3>
+        <img src="https://cdn-images.visual-paradigm.com/guide/data-modeling/what-is-erd/03-an-erd-entity.png">
+        <br>
+        <h2>Olemi atribuudid</h2>
+        <h3>Tuntud ka kui veerg, on atribuut seda omava olemi omadus või omadus. Atribuudil on nimi, mis kirjeldab atribuuti, ja tüüp, mis<br>
+            kirjeldab selle atribuuti, näiteks stringi varchar ja täisarv int.
+        </h3>
+        <img src="https://cdn-images.visual-paradigm.com/guide/data-modeling/what-is-erd/04-an-erd-entity-with-entities.png">
+        <br>
+        <h2>Primaarvõti</h2>
+        <h3>Tuntud ka kui PK, on primaarvõti eritüüpi olemiatribuut, mis määratleb unikaalselt andmebaasi tabelis kirje. Teisisõnu ei tohi<br>
+            olla kahte (või enamat) kirjet, millel on primaarvõtme atribuudi jaoks sama väärtus.
+        </h3>
+        <img src="https://cdn-images.visual-paradigm.com/guide/data-modeling/what-is-erd/05-concept-of-erd-primary-key.png">
+        <br>
+        <h2>Võõrvõti</h2>
+        <h3>Tuntud ka kui FK, võõrvõti on viide tabeli primaarvõtmele. Seda kasutatakse olemite vaheliste suhete tuvastamiseks. Pange tähele,<br>
+            et võõrvõtmed ei pea olema kordumatud. Mitu kirjet võivad jagada samu väärtusi.
+        </h3>
+        <img src="https://cdn-images.visual-paradigm.com/guide/data-modeling/what-is-erd/06-concept-of-erd-foreign-key.png">
+        <br>
+        <h2>Suhe</h2>
+        <h3>Kahe olemi vaheline suhe tähendab, et need kaks olemit on kuidagi üksteisega seotud. Näiteks võib üliõpilane registreeruda kursusele.<br>
+            Olem Üliõpilane on seetõttu seotud kursusega ja seost esitatakse nende vahel ühendava ühenduslülina.
+        </h3>
+        <br>
+        <h2>Kardinaalsus</h2>
+        <h3>Kardinaalsus määrab võimaliku esinemiste arvu ühes olemis, mis on seotud esinemiste arvuga teises olemis. Näiteks ÜHES meeskonnas on<br>
+            PALJU mängijaid. Kui see on ERD-s, on olem Meeskond ja Mängija omavahel seotud üks-mitmele suhtega.
+        </h3>
+
+        <h4>Üks-ühele kardinaalsuse näide</h4>
+        <img src="https://cdn-images.visual-paradigm.com/guide/data-modeling/what-is-erd/07-erd-one-to-one-relationship-example.png">
+        <br>
+        <h4>Üks-mitmele kardinaalsuse näide</h4>
+        <img src="https://cdn-images.visual-paradigm.com/guide/data-modeling/what-is-erd/08-erd-one-to-many-example.png">
+        <br>
+        <h4>Mitu-mitmele kardinaalsuse näide</h4>
+        <img src="https://cdn-images.visual-paradigm.com/guide/data-modeling/what-is-erd/09-erd-many-to-many-example.png">
+    </p>
+</body>
+</html>
